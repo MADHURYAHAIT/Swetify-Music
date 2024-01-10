@@ -702,16 +702,21 @@ footer .top:hover {
 }
 
 .music_container {
-  width: 40rem;
-  height: 63rem;
-  background-color: #000000;
+  width: 42rem;
+  height: 67rem;
+  background-color: #1d1d1d;
   border-radius: 2rem;
-  box-shadow: 1.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  box-shadow:0px 0px 30px 0px #000000bf;
   padding: 2rem;
+  left:10%;
   text-align: center;
+  transition: 1s ease;
   position: relative;
 }
 
+.music_container:hover{
+  box-shadow:0px 0px 75px 10px #ffc4007f;
+}
 .music_container #title {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -720,7 +725,7 @@ footer .top:hover {
   margin: 2rem 0 0.5rem 0;
   font-size: 2.3rem;
   font-weight: bold;
-  text-shadow: 0 3px 10px 2.5rem rgba(0, 0, 0, 0.7);
+  /* text-shadow: 0 3px 10px 2.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .music_container #artist {
@@ -749,7 +754,7 @@ footer .top:hover {
 
 /******* controls styles ********/
 .music_controls {
-  width: 29rem;
+  width: 32rem;
   display: flex;
   margin: auto;
   margin-top: 2rem;
@@ -759,40 +764,42 @@ footer .top:hover {
 
 .download_controls {
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   right: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .music_controls .fa {
-  color: #919191;
-  font-size: 2rem;
+  color: #939393;
+  font-size: 2.5rem;
   cursor: pointer;
+  transition: all 0.1s ease;
   filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
 }
 
 .download_controls .fa {
-
-  color: #919191;
-
-  font-size: 2rem;
+  color: #ebebeb;
+  font-size: 2.5rem;
   cursor: pointer;
+  transition: all 0.1s ease;
   filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
 }
 
 .music_controls .fa:hover {
-  color:  #919191;
+  color:  #ffffff;
+  scale: 1.08;
 }
 
 .download_controls .fa:hover {
-  color:  #919191;
+  color:  #ffffff;
+  scale: 1.08;
 }
 
 .music_controls .main_button {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  background-color: #919191;
+  background-color: #ffc400ac;
   color: #000000;
   font-size: 1.4rem;
   display: flex;
@@ -801,8 +808,8 @@ footer .top:hover {
 }
 
 .music_controls .main_button:hover {
-  background-color: white;
-  color: #3333ff;
+  background-color: #ffc400;
+  color: #050505;
   box-shadow: 0 0.5rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
@@ -823,6 +830,7 @@ footer .top:hover {
 /******** like button styles ********/
 .like_button {
   position: relative;
+  color: #ffffff !important;
   /* margin-bottom: 0px; */
 }
 
@@ -831,14 +839,21 @@ input[type="checkbox"] {
 }
 
 .like_icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  padding: 16px;
   margin-bottom: 0px;
   background-image: url("icons/likeBefore.png");
   background-size: cover;
+ filter:hue-rotate(89deg);
+ transition: all 0.1s ease;
   cursor: pointer;
+  margin-bottom: 4px;
 }
 
+.like_icon:hover {
+  scale:1.09;
+}
 input[type="checkbox"]:checked+.like_icon {
   background-image: url("icons/likeAfter.png");
 }
@@ -920,7 +935,7 @@ input[type="checkbox"]:checked+.like_icon {
 .progress_container {
   width: 100%;
   height: auto;
-  padding: 1rem;
+  padding: 1.6rem;
   margin-top: 1rem;
 }
 
@@ -931,7 +946,6 @@ input[type="checkbox"]:checked+.like_icon {
     0 4px 8px rgba(0, 0, 0, 0.7), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.7), 0 32px 64px rgba(0, 0, 0, 0.07);
   border-radius: 4rem;
-  background-color: white;
   position: relative;
   margin-top: 1.2rem;
   -webkit-transition: width 1s linear;
@@ -944,24 +958,22 @@ input[type="checkbox"]:checked+.like_icon {
 }
 
 .progress {
-  /* 
-  position: absolute;
+  
+  /* position: absolute;
   left: 0;
   top: 0;
   width: 0%;
-  height: 70%;
-  background-color: #ff3333;
-  border-radius: 4rem;
+  
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  transition: value 0s linear;
-  */
+  transition: value 0.1s linear; */
+ 
 }
 
 .progress_duration_meter {
   display: flex;
-  color: white;
+  color: #ffc400;
   justify-content: space-between;
   font-size: 1.3rem;
 }
@@ -1586,4 +1598,8 @@ h2 a{
 
 h3{
   font-size: 28px;
+}
+
+.like_icon{
+  color: red !important;
 }
