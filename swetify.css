@@ -744,6 +744,7 @@ h4{
   font-family: 'Franklin Gothic Medium' !important;
   color: #a8a8a8;
 }
+
 .music_container #artist {
   color: white;
   text-transform: capitalize;
@@ -815,7 +816,9 @@ h4{
   color:  #ffffff;
   scale: 1.06;
 }
-
+#loop{
+  display: none;
+}
 .download_controls .fa:hover {
   color:  #ffffff;
   scale: 1.08;
