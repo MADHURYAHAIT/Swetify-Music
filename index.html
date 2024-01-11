@@ -477,22 +477,24 @@
           <div class="img_container" id="songimage">
             <img src="songs-images/AtifAslam/DekhteDekhte.jpg" class="songimg" id="songimg" />
           </div>
-          <h2 id="title">songtitle</h2>
+          <div class="music_controls2">
+            <h2 id="title">songtitle</h2>
+            <!-- <i class="fa fa-repeat loop_button" id="loop" aria-hidden="true" title="Loop" ></i> -->
+          <div class="like_button" id="likeBtn">
+            <input type="checkbox" id="likeToggle" />
+            <label for="likeToggle" class="like_icon" ></label>
+          </div>
+          </div>
+         
           <h3>
             <marquee id="artist">artists</marquee>
           </h3>
          
           <audio src="songs-images/AtifAslam/DekhteDekhte.mp3"></audio>
           <!-- progress-bar -->
+          
           <div class="progress_container" id="progress_container">
-            <div class="like_button" id="likeBtn">
-              <input type="checkbox" id="likeToggle" />
-              <label for="likeToggle" class="like_icon" ></label>
-            </div>
-            <div class="like_button" id="likeBtn">
-              <input type="checkbox" id="likeToggle" />
-              <label for="likeToggle" class="like_icon" ></label>
-            </div>
+            
             <div class="progress_duration_meter">
               <div id="current_time">0:00</div>
               <div id="duration">4:16</div>
@@ -505,7 +507,7 @@
 
         <!-- controls -->
         <div class="music_controls">
-          <i class="fa fa-repeat loop_button" id="loop" aria-hidden="true" title="Loop" ></i>
+         
           <i class="fa fa-backward" id="back" title="Skip back"></i>
           <i class="fa fa-step-backward" id="prev" title="Previous"></i>
           <i class="fa fa-play main_button" id="play" title="Play"></i>
