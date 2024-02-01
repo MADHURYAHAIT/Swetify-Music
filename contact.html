@@ -24,7 +24,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/homepage/swetifylogo.jpg" />
-
+<!-- scrollbar css link -->
+<link rel="stylesheet" href="../Swetify-Music/Srollbar_style/style.css">
   <!-- Font Awesome Kit -->
   <script src="https://kit.fontawesome.com/32ceed9cc4.js" crossorigin="anonymous"></script>
 
@@ -81,6 +82,10 @@
           <span class="glyphicon glyphicon-headphones " id="headphones"></span> Swetify
         </a>
       </h2>
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider2 round"></span>
+    </label>
     </nav>
     <div id="content">
       <div id="particles-js"></div>
@@ -99,28 +104,28 @@
         <div class="container categories-heading">
           <!-- <span style="color: #ffc400;">Contact Us </span><br> -->
         </div>
-        <div class="modal-box" style="margin-top: -1rem;">
+        <div class="modal-box" style="margin-top: -1rem; min-width: 300px;">
           <img class="banner-img-contact" src="homepage/contact4.svg"></img>
 
           <form class='modal-div' action="https://formspree.io/f/xzbnpqae" method="POST">
 
             <p class='contact-subheader'>Get In Touch</p>
-            <div class='input-contact-flexbox'>
-              <div style="margin:3vh 4vh">
+            <div>
+              <div style="margin:3vh 4vh ;display: block;">
                 <label class='input-header'>First Name</label>
                 <input class='input-box' name="First Name" style="width:100%; border-radius: none;" type="text"
                   placeholder='Shwet' id="FNAME" required></input>
 
               </div>
 
-              <div style="margin:3vh 4vh">
+              <div style="margin:3vh 4vh;display: block;">
                 <label class='input-header'>Last Name</label>
                 <input class='input-box' name="Last Name" style="width:100%" type="text" placeholder='Khatri'
                   id="LNAME"></input>
 
               </div>
             </div>
-            <div class='input-contact-flexbox'>
+            <div >
               <div style="margin:3vh 4vh">
                 <label class='input-header'>Email</label>
                 <input class='input-box' name="Email" style="width:100%" type="text" placeholder='shwet@gmail.com'
@@ -145,7 +150,7 @@
 
       <!-- footer section  -->
       <footer>
-        <div class="footer ">
+        <div class="footer " id="footer">
           <div class="footer-text">
             <p>Made with ❤️ by <span class="title"><a href="#">Swetify
                 </a></span>Music Contributors
@@ -180,6 +185,7 @@
     </div>
 
     <script src="./jsfunctions//changetab.js"></script>
+    <script src="./jsfunctions/mode.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

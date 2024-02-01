@@ -24,7 +24,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/homepage/swetifylogo.jpg" />
-
+<!-- scrollbar css link -->
+<link rel="stylesheet" href="../Swetify-Music/Srollbar_style/style.css">
   <!-- Font Awesome Kit -->
   <script src="https://kit.fontawesome.com/32ceed9cc4.js" crossorigin="anonymous"></script>
 
@@ -81,6 +82,10 @@
           <span class="glyphicon glyphicon-headphones " id="headphones"></span> Swetify
         </a>
       </h2>
+      <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider2 round"></span>
+    </label>
     </nav>
     <div id="content">
       <div id="particles-js"></div>
@@ -144,11 +149,19 @@
 
 
       </div>
+            <!-- Contributor Section -->
+      <div class="contributors-container">
+        <h2>Contributors</h2>
+        <ul id="contributors-list">
+          <!-- Contributors will be dynamically added here -->
+        </ul>
+      </div>
+
 
 
       <!-- footer section  -->
       <footer>
-        <div class="footer ">
+        <div class="footer " id="footer">
           <div class="footer-text">
             <p>Made with ❤️ by <span class="title"><a href="#">Swetify
                 </a></span>Music Contributors
@@ -184,6 +197,7 @@
 
       <!-- to change tabs -->
       <script src="./jsfunctions//changetab.js"></script>
+      <script src="./jsfunctions/mode.js"></script>
       
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
